@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cf39282f75417c348814b73b0dd34125
+timeCreated: 1515595298
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - move: {fileID: 2800000, guid: f27e56a453d6360408c247868a4a413a, type: 3}
+  - camera: {instanceID: 0}
+  - background: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

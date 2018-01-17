@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C3401881-B915-9838-BF74-989C21BA715C}</ProjectGuid>
+    <ProjectGuid>{8D3BA75B-7608-8CD5-9B7B-7F1DBB94A5F1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,7 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\DrawShip.cs" />
+     <Compile Include="Assets\Scripts\Click.cs" />
+     <Compile Include="Assets\Scripts\Draw.cs" />
+     <Compile Include="Assets\Scripts\EnergyManager.cs" />
+     <Compile Include="Assets\Scripts\GoToSpace.cs" />
+     <Compile Include="Assets\Scripts\Pan.cs" />
+     <Compile Include="Assets\Scripts\Part.cs" />
+     <Compile Include="Assets\Scripts\Ship.cs" />
+     <Compile Include="Assets\Scripts\Shoot.cs" />
+     <Compile Include="Assets\Scripts\Story.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
