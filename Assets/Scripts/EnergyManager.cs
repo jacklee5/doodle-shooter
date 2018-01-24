@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnergyManager : MonoBehaviour {
 
 	public int reactorEnergy;
-	private double energyLimit;
-	private double energyUsed;
+	public double energyLimit;
+	public double energyUsed;
 	private string[] blueprint;
 
 	// Use this for initialization
@@ -24,6 +24,9 @@ public class EnergyManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (energyUsed > energyLimit) {
+			
+		} else {
+		}
 	}
 }

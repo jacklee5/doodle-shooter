@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: a913bbb792e7a984390e2cd3c6c0c605
-timeCreated: 1516803503
+guid: 4176fddd169f8cb48b213d62a9884581
+timeCreated: 1516807402
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - lazer: {fileID: 1440105299383442, guid: 435d24c59e757ea4b99606c0162eb6e1, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

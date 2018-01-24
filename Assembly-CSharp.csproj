@@ -52,9 +52,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Click.cs" />
+     <Compile Include="Assets\Scripts\destroy.cs" />
      <Compile Include="Assets\Scripts\Draw.cs" />
      <Compile Include="Assets\Scripts\EnergyManager.cs" />
      <Compile Include="Assets\Scripts\GoToSpace.cs" />
+     <Compile Include="Assets\Scripts\move.cs" />
      <Compile Include="Assets\Scripts\Pan.cs" />
      <Compile Include="Assets\Scripts\Part.cs" />
      <Compile Include="Assets\Scripts\Ship.cs" />
