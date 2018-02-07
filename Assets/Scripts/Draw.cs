@@ -57,5 +57,38 @@ public class Draw : MonoBehaviour
 				}
 			}
 		}
+		CenterOnChildred (this.transform);
 	}
+	public static void CenterOnChildred(Transform aParent)
+	{
+//		var childs = aParent.Cast<Transform>().ToList();
+//		var pos = Vector3.zero;
+//		foreach(var C in childs)
+//		{
+//			pos += C.position;
+//			C.parent = null;
+//		}
+//		pos /= childs.Count;
+//		aParent.position = pos;
+//		foreach(var C in childs)
+//			C.parent = aParent;
+
+		Vector3 pos = Vector3.zero;
+		int childCount = 0;
+		List<Transform> childs =  new List<Transform>();
+
+		foreach (Transform child in aParent) {
+			pos += child.position;
+			child.parent = null;
+			childs.Add (child);
+			childCount++;
+		}
+		print (childCount);
+		pos /= childCount;
+		aParent.position = pos;
+		foreach (Transform child in childs) {
+			child.parent = aParent;
+		}
+	}  
+
 }

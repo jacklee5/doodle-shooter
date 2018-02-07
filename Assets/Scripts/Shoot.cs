@@ -11,13 +11,18 @@ public class Shoot : MonoBehaviour {
 	private Timer tmr; 
 	private Transform ship;
 	private double coolDown;
+	EnergyManager shipEnergy;
+	private bool hasReloaded;
 
 	// Use this for initialization
 	void Start () {
 		speed = 10;
+		reload = 1;
 		tmr = new Timer();
 		ship = transform.parent;
 		coolDown = 0;
+		shipEnergy = ship.GetComponent<EnergyManager> ();
+		hasReloaded = true;
 	}
 	
 	// Update is called once per frame
@@ -30,10 +35,13 @@ public class Shoot : MonoBehaviour {
 			Quaternion rotation = Quaternion.Euler (0, 0, Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90);
 			GameObject projectile = (GameObject)Instantiate (lazer, myPos, rotation);
 			projectile.GetComponent<Rigidbody2D> ().velocity = direction * speed;
-//TODO: delete projectile after a couple seconds
-			EnergyManager shipEnergy = ship.GetComponent<EnergyManager> ();
 			shipEnergy.energyUsed += 6;
 			coolDown = reload;
+			hasReloaded = false;
+		}
+		if (coolDown <= 0.1 && !hasReloaded) {
+			hasReloaded = true;
+			shipEnergy.energyUsed -= 6;
 		}
 		coolDown -= Time.deltaTime;
 		print (coolDown);

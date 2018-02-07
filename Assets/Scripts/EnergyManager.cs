@@ -25,7 +25,7 @@ public class EnergyManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (energyUsed > energyLimit) {
-			
+			print ("overheating");
 		} else {
 		}
 	}
